@@ -120,3 +120,4 @@ window.addEventListener('keyup', function (e) {
 });
 
 updateGame();
+
