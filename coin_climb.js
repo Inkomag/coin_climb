@@ -1,3 +1,12 @@
+window.Telegram.WebApp.ready();
+
+Telegram.WebApp.onEvent('mainButtonClicked', function() {
+    Telegram.WebApp.sendData(JSON.stringify({ score: score }));
+});
+
+Telegram.WebApp.MainButton.text = "Send Score";
+Telegram.WebApp.MainButton.show();
+
 const canvas = document.getElementById('gameCanvas');
 const context = canvas.getContext('2d');
 
